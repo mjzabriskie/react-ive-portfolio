@@ -3,7 +3,7 @@ import selfie from "../../assets/images/mark-z.jpg";
 
 const About = () => {
   return (
-    <section className="container">
+    <section className="container  pt-4">
       <h1 className="text-center">Hi, I'm Mark</h1>
       <img src={selfie} className='selfie'></img>
       <article className="bg-transparent bg-gradient mt-5 mx-5 pt-3 px-5">

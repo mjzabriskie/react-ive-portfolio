@@ -14,9 +14,13 @@ body {
 .main-window {
   min-height: 100vh;
   position: relative;
+  padding-bottom: 94px;
 }
 
 header {
+  background-image: url("./assets/images/mult-colored-hero.jpg");
+  background-attachment: fixed;
+  background-size: cover;
   height: fit-content;
   padding: 15px;
 }

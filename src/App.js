@@ -20,16 +20,6 @@ function App() {
     } else {
       return <About />;
     }
-    // switch (currentSection) {
-    //   case "Portfolio":
-    //     return <Project />;
-    //   case "Contact":
-    //     return <Contact />;
-    //   case "Resume":
-    //     return <Resume />;
-    //   default:
-    //     return <About />;
-    // }
   };
   return (
     <div className="main-window">
