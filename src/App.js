@@ -23,12 +23,11 @@ function App() {
   };
   return (
     <div className="main-window">
-
-        <Header
-          currentSection={currentSection}
-          setCurrentSection={setCurrentSection}
-        />
-        <main>{showSection(currentSection)}</main>
+      <Header
+        currentSection={currentSection}
+        setCurrentSection={setCurrentSection}
+      />
+      <main>{showSection(currentSection)}</main>
 
       <Footer />
     </div>

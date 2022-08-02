@@ -4,9 +4,9 @@ import selfie from "../../assets/images/mark-z.jpg";
 const About = () => {
   return (
     <section className="container  pt-4">
-      <h1 className="text-center">Hi, I'm Mark</h1>
       <img src={selfie} className='selfie'></img>
-      <article className="bg-transparent bg-gradient mt-5 mx-5 pt-3 px-5">
+      <h1 className="text-center">Hi, I'm Mark</h1>
+      <div className="bg-transparent bg-gradient mt-lg-5 mx-lg-5 pt-lg-3 px-lg-5">
         <p className="p-2">
           I've worked for several years now as a senior business analyst with the State of Utah helping them to create
           with innovative technological solutions to move their workflow from a
@@ -24,7 +24,7 @@ const About = () => {
           Thank you for visiting my portfolio! If you feel like I could help you
           with a project, please reach out to me via the Contact section.
         </p>
-      </article>
+      </div>
     </section>
   );
 };

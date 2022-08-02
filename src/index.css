@@ -2,23 +2,30 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+  min-height: 100%;
+}
+
 body {
-  background-image: linear-gradient(180deg,
+  background-image: url(./assets/images/mult-colored-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  /* background-image: linear-gradient(180deg,
       rgb(210, 210, 210) 0%,
       rgb(133, 133, 133) 80%,
-      rgb(80, 80, 80) 100%);
+      rgb(80, 80, 80) 100%); */
   color: rgb(27, 27, 27);
   font-family: 'Roboto', sans-serif;
 }
 
 .main-window {
   min-height: 100vh;
-  position: relative;
   padding-bottom: 94px;
 }
 
 header {
-  background-image: url("./assets/images/mult-colored-hero.jpg");
+  background-image: inherit;
   background-attachment: fixed;
   background-size: cover;
   height: fit-content;
@@ -32,6 +39,14 @@ header h1 {
   position: relative;
   z-index: 1;
   overflow: hidden;
+}
+
+main {
+  background: inherit;
+  position: relative;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: saturate(120%) blur(10px);
+  min-height: 100%;
 }
 
 header h1::before {
@@ -66,7 +81,7 @@ p {
 
 footer {
   height: 94px;
-  background-image: url("./assets/images/mult-colored-hero.jpg");
+  background-image: inherit;
   background-position: bottom;
   background-size: cover;
   position: absolute;
