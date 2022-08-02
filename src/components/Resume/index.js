@@ -6,7 +6,7 @@ const Resume = () => {
       <h1 className="text-center">Resume</h1>
       <h2>Full Stack Developer</h2>
       <div className="d-flex flex-wrap justify-content-center">
-        <div className="bg-dark bg-gradient text-light p-3 m-3 col">
+        <div className="bg-dark bg-gradient text-light p-5 m-3 col">
           <h3>Front-end</h3>
           <ul>
             <li>HTML</li>
@@ -18,7 +18,7 @@ const Resume = () => {
             <li>Bulma</li>
           </ul>
         </div>
-        <div className="bg-dark bg-gradient text-light p-3 m-3 col">
+        <div className="bg-dark bg-gradient text-light p-5 m-3 col">
           <h3>Back-end</h3>
           <ul>
             <li>Creation and use of APIs</li>
