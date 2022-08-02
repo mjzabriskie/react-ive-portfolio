@@ -32,7 +32,7 @@ function App() {
     // }
   };
   return (
-    <div className="position-relative min-vh-100 ">
+    <div className="main-window">
       <div className="content-wrap">
         <Header
           currentSection={currentSection}
