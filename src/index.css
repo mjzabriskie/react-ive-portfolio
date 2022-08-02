@@ -169,6 +169,10 @@ footer {
   0 6px 15px 2px rgba(0, 0, 0, 0.6);
 }
 
+.about-text {
+background-color: rgba(255, 255, 255, 0.131);
+}
+
 .grow {
   transition: all .2s ease-in-out;
 }

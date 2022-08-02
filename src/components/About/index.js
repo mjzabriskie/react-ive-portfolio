@@ -6,7 +6,7 @@ const About = () => {
     <section className="container  pt-4">
       <img src={selfie} className='selfie'></img>
       <h1 className="text-center">Hi, I'm Mark</h1>
-      <div className="bg-transparent bg-gradient mt-lg-5 mx-lg-5 pt-lg-3 px-lg-5">
+      <div className="about-text bg-gradient mt-lg-5 mx-lg-5 pt-lg-3 px-lg-5">
         <p className="p-2">
           I've worked for several years now as a senior business analyst with the State of Utah helping them to create
           with innovative technological solutions to move their workflow from a
