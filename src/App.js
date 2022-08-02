@@ -33,13 +33,13 @@ function App() {
   };
   return (
     <div className="main-window">
-      <div className="content-wrap">
+
         <Header
           currentSection={currentSection}
           setCurrentSection={setCurrentSection}
         />
-        <main className="pb-5">{showSection(currentSection)}</main>
-      </div>
+        <main>{showSection(currentSection)}</main>
+
       <Footer />
     </div>
   );

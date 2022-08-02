@@ -16,6 +16,10 @@ const Contact = () => {
     return regex.test(String(email).toLowerCase());
   };
 
+  const capitalizeFirstLetter = (string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
   const handleValidate = (event) => {
     if (event.target.name === "email") {
       const isValid = validateEmail(event.target.value);
@@ -39,7 +43,7 @@ const Contact = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     setFormState({ name: "", email: "", message: "" });
-    
+
     console.log(name);
 
     // window.alert("Message submitted. Thank you!");
