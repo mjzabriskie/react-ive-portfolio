@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { send } from "emailjs-com";
 
 const Contact = () => {
   const [formState, setFormState] = useState({
@@ -37,9 +38,24 @@ const Contact = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const isComplete = handleValidate();
-    alert(isComplete);
-    window.alert("Message submitted. Thank you!");
+    setFormState({ name: "", email: "", message: "" });
+    
+    console.log(name);
+
+    // window.alert("Message submitted. Thank you!");
+    // send(
+    //   REACT_APP_EMAILJS_SERVICE_ID,
+    //   REACT_APP_EMAILJS_TEMPLATE_ID,
+    //   formState,
+    //   REACT_APP_EMAILJS_USER_ID
+    // )
+    //   .then((response) => {
+    //     window.alert("Message submitted. Thank you!")
+    //   })
+    //   .catch(err => {
+    //     window.alert("Something went wrong, please see contact details on resume!")
+    //     console.log(err);
+    //   });
   };
 
   return (
@@ -51,7 +67,9 @@ const Contact = () => {
         className="d-flex flex-column m-auto w-50"
       >
         <div>
-          <label className="p-1" htmlFor="name">Name:</label>
+          <label className="p-1" htmlFor="name">
+            Name:
+          </label>
           <input
             className="w-100"
             name="name"
@@ -83,9 +101,9 @@ const Contact = () => {
           />
         </div>
         {errorMessage && (
-            <div>
-                <p className="error-text">{errorMessage}</p>
-            </div>
+          <div>
+            <p className="error-text">{errorMessage}</p>
+          </div>
         )}
         <button className="mt-2 btn btn-dark col-2" type="submit">
           Submit
