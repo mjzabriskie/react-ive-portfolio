@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Resume = () => {
   return (
@@ -37,6 +37,7 @@ const Resume = () => {
           <a
             href="https://drive.google.com/file/d/1_87Er3QG3qBK05rmmoxT61FR1kvmmKsH/view?usp=sharing"
             target="_blank"
+            rel="noreferrer"
           >
             here
           </a>

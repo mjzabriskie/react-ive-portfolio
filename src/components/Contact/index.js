@@ -18,7 +18,7 @@ const Contact = () => {
 
   const capitalizeFirstLetter = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
-  }
+  };
 
   const handleValidate = (event) => {
     if (event.target.name === "email") {
@@ -42,24 +42,24 @@ const Contact = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setFormState({ name: "", email: "", message: "" });
+    // setFormState({ name: "", email: "", message: "" });
 
-    console.log(name);
-
-    // window.alert("Message submitted. Thank you!");
-    // send(
-    //   REACT_APP_EMAILJS_SERVICE_ID,
-    //   REACT_APP_EMAILJS_TEMPLATE_ID,
-    //   formState,
-    //   REACT_APP_EMAILJS_USER_ID
-    // )
-    //   .then((response) => {
-    //     window.alert("Message submitted. Thank you!")
-    //   })
-    //   .catch(err => {
-    //     window.alert("Something went wrong, please see contact details on resume!")
-    //     console.log(err);
-    //   });
+    window.alert("Message submitted. Thank you!");
+    send(
+      REACT_APP_EMAILJS_SERVICE_ID,
+      REACT_APP_EMAILJS_TEMPLATE_ID,
+      formState,
+      REACT_APP_EMAILJS_USER_ID
+    )
+      .then((response) => {
+        window.alert("Message submitted. Thank you!");
+      })
+      .catch((err) => {
+        window.alert(
+          "Something went wrong, please see contact details on resume!"
+        );
+        console.log(err);
+      });
   };
 
   return (

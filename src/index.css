@@ -139,6 +139,10 @@ footer {
 
 }
 
+#contact-form {
+  max-width: 800px !important;
+}
+
 .nav-item:hover {
   color: #EEE
 }
@@ -155,6 +159,57 @@ footer {
 .nav-item-active::before {
   color: #EEE;
   box-shadow: inset 0 0 120px rgba(32, 32, 32, 0.9);
+}
+
+.awesome-icon {
+  text-align: center;
+  transition: color .5s;
+  color: #111111;
+  font-size: 48px;
+  background: inherit;
+  border-radius: 50px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow:
+    0 2px 1px 0 rgba(255, 255, 255, 0.4) inset,
+    0 6px 15px 2px rgba(0, 0, 0, 0.5);
+}
+
+.awesome-icon::before {
+   transition: box-shadow .5s;
+  background: inherit;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 200px rgba(255, 255, 255, .5),
+    0 6px 15px 2px rgba(0, 0, 0, 0.5);
+  filter: blur(4px);
+  z-index: -1;
+}
+
+.awesome-icon:hover {
+  color: #EEE;
+}
+
+.awesome-icon:hover::before {
+  box-shadow: inset 0 0 400px rgba(32, 32, 32, 0.952);
+}
+
+.github-icon {
+  padding: 0 13px;
+}
+
+.linkedin-icon {
+  padding: 0 15px;
+}
+
+.stack-icon {
+  padding: 0 18px;
 }
 
 .selfie {
