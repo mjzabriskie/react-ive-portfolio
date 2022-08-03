@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-ive-portfolio/static/css/main.9990d8df.css",
+    "main.js": "/react-ive-portfolio/static/js/main.7cd8f426.js",
+    "static/media/john-fowler-5bv-_tIwHFk-unsplash.jpg": "/react-ive-portfolio/static/media/john-fowler-5bv-_tIwHFk-unsplash.a4ed4a88a83e31268a9e.jpg",
+    "static/media/marvel-ous-gifs.png": "/react-ive-portfolio/static/media/marvel-ous-gifs.ca0ef30f3b66e361343d.png",
+    "static/media/run-buddy.png": "/react-ive-portfolio/static/media/run-buddy.fb79a32be5b32607d8de.png",
+    "static/media/hero-outline.png": "/react-ive-portfolio/static/media/hero-outline.29d80ed490ef15e99537.png",
+    "static/media/mark-z.jpg": "/react-ive-portfolio/static/media/mark-z.c7d2767207c274904ddf.jpg",
+    "static/media/weather-dashboard.png": "/react-ive-portfolio/static/media/weather-dashboard.f59e1bfb4a46e8132fd5.png",
+    "static/media/password-generator.png": "/react-ive-portfolio/static/media/password-generator.e4af173aecc439162c66.png",
+    "index.html": "/react-ive-portfolio/index.html",
+    "main.9990d8df.css.map": "/react-ive-portfolio/static/css/main.9990d8df.css.map",
+    "main.7cd8f426.js.map": "/react-ive-portfolio/static/js/main.7cd8f426.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9990d8df.css",
+    "static/js/main.7cd8f426.js"
+  ]
+}
