@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { send } from "emailjs-com";
+//import { send } from "emailjs-com";
 
 const Contact = () => {
   const [formState, setFormState] = useState({
@@ -30,7 +30,7 @@ const Contact = () => {
       }
     } else {
       if (!event.target.value.length) {
-        setErrorMessage(`Your ${event.target.name} is a required field.`);
+        setErrorMessage(`${capitalizeFirstLetter(event.target.name)} is a required field.`);
       } else {
         setErrorMessage("");
       }
@@ -42,24 +42,23 @@ const Contact = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // setFormState({ name: "", email: "", message: "" });
-
+    setFormState({ ...formState, name: "", email: "", message: "" });
     window.alert("Message submitted. Thank you!");
-    send(
-      REACT_APP_EMAILJS_SERVICE_ID,
-      REACT_APP_EMAILJS_TEMPLATE_ID,
-      formState,
-      REACT_APP_EMAILJS_USER_ID
-    )
-      .then((response) => {
-        window.alert("Message submitted. Thank you!");
-      })
-      .catch((err) => {
-        window.alert(
-          "Something went wrong, please see contact details on resume!"
-        );
-        console.log(err);
-      });
+    // send(
+    //   REACT_APP_EMAILJS_SERVICE_ID,
+    //   REACT_APP_EMAILJS_TEMPLATE_ID,
+    //   formState,
+    //   REACT_APP_EMAILJS_USER_ID
+    // )
+    //   .then((response) => {
+    //     window.alert("Message submitted. Thank you!");
+    //   })
+    //   .catch((err) => {
+    //     window.alert(
+    //       "Something went wrong, please see contact details on resume!"
+    //     );
+    //     console.log(err);
+    //   });
   };
 
   return (
