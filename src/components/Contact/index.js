@@ -63,19 +63,19 @@ const Contact = () => {
   };
 
   return (
-    <section className="container pt-4">
+    <section className="container pt-4 pb-4 d-flex flex-column align-items-center">
       <h1 className="text-center">Contact Form</h1>
       <form
         id="contact-form"
         onSubmit={handleSubmit}
-        className="d-flex flex-column m-auto w-50"
+        className="d-flex flex-column col-12"
       >
-        <div>
+        <div className="">
           <label className="p-1" htmlFor="name">
             Name:
           </label>
           <input
-            className="w-100"
+            className="col-12"
             name="name"
             defaultValue={name}
             onBlur={handleValidate}
@@ -86,7 +86,7 @@ const Contact = () => {
             Email:
           </label>
           <input
-            className="w-100"
+            className="col-12"
             name="email"
             defaultValue={email}
             onBlur={handleValidate}
@@ -97,7 +97,7 @@ const Contact = () => {
             Message:
           </label>
           <textarea
-            className="w-100"
+            className="col-12"
             name="message"
             rows="5"
             defaultValue={message}
@@ -109,7 +109,7 @@ const Contact = () => {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button className="mt-2 btn btn-dark col-2" type="submit">
+        <button className="mt-2 btn btn-dark col-4" type="submit">
           Submit
         </button>
       </form>

@@ -22,7 +22,7 @@ function App() {
     }
   };
   return (
-    <div className="main-window">
+    <div className="main-window d-flex flex-wrap justify-content-center">
       <Header
         currentSection={currentSection}
         setCurrentSection={setCurrentSection}
