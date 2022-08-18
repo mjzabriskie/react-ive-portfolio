@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-//import { send } from "emailjs-com";
+import { send } from "emailjs-com";
 
 const Contact = () => {
   const [formState, setFormState] = useState({
@@ -42,23 +42,23 @@ const Contact = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setFormState({ ...formState, name: "", email: "", message: "" });
-    window.alert("Message submitted. Thank you!");
-    // send(
-    //   REACT_APP_EMAILJS_SERVICE_ID,
-    //   REACT_APP_EMAILJS_TEMPLATE_ID,
-    //   formState,
-    //   REACT_APP_EMAILJS_USER_ID
-    // )
-    //   .then((response) => {
-    //     window.alert("Message submitted. Thank you!");
-    //   })
-    //   .catch((err) => {
-    //     window.alert(
-    //       "Something went wrong, please see contact details on resume!"
-    //     );
-    //     console.log(err);
-    //   });
+    setFormState({name: "", email: "", message: "" });
+    send(
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+      formState,
+      process.env.REACT_APP_EMAILJS_USER_ID
+    )
+      .then((response) => {
+        window.alert("Message submitted. Thank you!");
+        event.target.reset();
+      })
+      .catch((err) => {
+        window.alert(
+          "Something went wrong, please see contact details on resume!"
+        );
+        console.log(err);
+      });
   };
 
   return (

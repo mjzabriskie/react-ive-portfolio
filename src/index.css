@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: url('./assets/images/john-fowler-5bv-_tIwHFk-unsplash.jpg');
+  background-image: url('./assets/images/mult-colored-hero.jpg');
   background-position: center;
   background-size: cover;
   color: rgb(27, 27, 27);
@@ -242,6 +242,10 @@ footer {
 @media screen and (min-width: 575px) {
   main {
     min-width: 80%;
+  }
+
+  body {
+    background-image: url('./assets/images/john-fowler-5bv-_tIwHFk-unsplash.jpg');
   }
 }
 
